@@ -1,0 +1,77 @@
+/* Light Theme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text for readability */
+  }
+  
+  header {
+    background: #001F3F; /* Navy Blue header */
+    color: #fff; /* White text */
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff; /* White navigation links */
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Add hover effect */
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    margin: 1rem auto;
+    max-width: 800px; /* Center content with a maximum width */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  footer {
+    background: #001F3F; /* Navy Blue footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #121212; /* Dark background */
+    color: #ddd; /* Light text */
+  }
+  
+  header.dark {
+    background: #333; /* Darker header */
+  }
+  
+  footer.dark {
+    background: #333; /* Darker footer */
+  }
+  
+  section.dark {
+    background-color: #1e1e1e; /* Darker section background */
+    color: #ddd; /* Light text in sections */
+    box-shadow: none; /* Remove shadows for a flatter design */
+  }
+  
+  button.theme-toggle {
+    background-color: #001F3F; /* Navy blue button */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem auto;
+    display: block;
+  }
+  
+  button.theme-toggle:hover {
+    background-color: #004080; /* Slightly brighter blue on hover */
+  }
