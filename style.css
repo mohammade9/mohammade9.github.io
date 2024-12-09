@@ -75,3 +75,94 @@ body {
   button.theme-toggle:hover {
     background-color: #004080; /* Slightly brighter blue on hover */
   }
+
+  /* Light Theme */
+button.project-button {
+  background-color: #001F3F; /* Navy Blue */
+  color: white; /* White text */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+button.project-button:hover {
+  background-color: #004080; /* Lighter Blue on hover */
+}
+
+button.project-button a {
+  text-decoration: none;
+  color: white; /* Keep link color white */
+}
+
+/* Dark Theme */
+body.dark button.project-button {
+  background-color: #333; /* Dark gray for dark mode */
+  color: #ddd; /* Light text for contrast */
+}
+
+body.dark button.project-button:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+}
+
+body.dark button.project-button a {
+  color: #ddd; /* Keep link text light */
+}
+
+/* Form Styling */
+#data-form {
+  margin-bottom: 1rem;
+}
+
+#data-form label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+#data-form select, #filter-button {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#filter-button {
+  background-color: #001F3F;
+  color: white;
+  cursor: pointer;
+}
+
+#filter-button:hover {
+  background-color: #004080;
+}
+
+/* User Selection Row */
+#user-selection h3 {
+  margin-bottom: 0.5rem;
+}
+
+#user-selection p {
+  margin: 0.3rem 0;
+}
+
+/* Table Styling */
+#data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#data-table th, #data-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#data-table th {
+  background-color: #ccc; /* Light gray for header */
+}
+
+#data-table td {
+  background-color: #f9f9f9; /* Slightly lighter background */
+}
