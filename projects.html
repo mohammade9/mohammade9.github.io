@@ -34,14 +34,9 @@
         </script>
       </select>
 
-      <!-- Gender Dropdown -->
-      <label for="gender">Gender:</label>
-      <select id="gender" required>
-        <option value="">Select Gender</option>
-        <option value="both">Both</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
+      <!-- Year Search Bar -->
+      <label for="year">Year:</label>
+      <input type="number" id="year" placeholder="Enter year (1950-2010)" min="1950" max="2010" required>
 
       <!-- Country Dropdown -->
       <label for="country">Country:</label>
@@ -63,7 +58,7 @@
     <div id="user-selection" style="display: none; margin-top: 1rem;">
       <h3>Your Selection:</h3>
       <p>Age: <span id="selected-age"></span></p>
-      <p>Gender: <span id="selected-gender"></span></p>
+      <p>Year: <span id="selected-year"></span></p>
       <p>Country: <span id="selected-country"></span></p>
     </div>
 
@@ -107,19 +102,24 @@
     // JavaScript to Update User Selection and Generate Age Rows
     document.getElementById("filter-button").addEventListener("click", () => {
       const ageRange = document.getElementById("age").value; // Get selected age range
-      const gender = document.getElementById("gender").value; // Get selected gender
+      const year = document.getElementById("year").value; // Get entered year
       const country = document.getElementById("country").value; // Get selected country
       const tableBody = document.getElementById("table-body");
 
       // Validate Input
-      if (!ageRange || !gender || !country) {
+      if (!ageRange || !year || !country) {
         alert("Please select all fields.");
+        return;
+      }
+
+      if (year < 1950 || year > 2010) {
+        alert("Please enter a year between 1950 and 2010.");
         return;
       }
 
       // Update User Selection
       document.getElementById("selected-age").textContent = ageRange;
-      document.getElementById("selected-gender").textContent = gender;
+      document.getElementById("selected-year").textContent = year;
       document.getElementById("selected-country").textContent = country;
       document.getElementById("user-selection").style.display = "block";
 
