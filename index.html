@@ -1,60 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Al-Hindi | Portfolio</title>
-  <link rel="stylesheet" href="style.css"> <!-- External CSS for styles -->
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mohammed Al-Hindi - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-primary-fixed": "#001c3a",
+                        "background": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f3f3f4",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-container": "#878787",
+                        "surface-dim": "#dadada",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#6f88ad",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "primary-fixed-dim": "#afc8f0",
+                        "on-secondary-fixed-variant": "#454747",
+                        "on-surface-variant": "#43474e",
+                        "primary-fixed": "#d4e3ff",
+                        "inverse-primary": "#afc8f0",
+                        "secondary": "#5d5f5f",
+                        "surface-tint": "#476083",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#dcdddd",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-bright": "#f9f9f9",
+                        "outline-variant": "#c4c6cf",
+                        "outline": "#74777f",
+                        "on-secondary-container": "#5f6161",
+                        "primary-container": "#001f3f",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "tertiary-container": "#1f1f1f",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "tertiary": "#060606",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-primary-fixed-variant": "#2f486a",
+                        "primary": "#000613"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-lg": "64px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-sm": "16px",
+                        "margin-md": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["60px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Mohammed Al-Hindi</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Currently studying at KFUPM and looking for an internship opportunity, I strive to make the best use of my studies in Insurance and Takaful by applying what I have learned. I love to observe things around me to identify patterns or find solutions to problems.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div>
-      <h3>Survival Function in GCC</h3>
-      <p>
-        Using GCC stat to find all the data I need, which I then used to create the survival function in an Excel sheet.
-      </p>
-    </div>
-    <button class="project-button">
-      <a href="projects.html" style="color: white; text-decoration: none;">View Projects</a>
-    </button>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:Al-hindimohd@hotmail.com">Al-hindimohd@hotmail.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Mohammed Al-Hindi</p>
-  </footer>
-
-  <!-- Add the toggle button and script here -->
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark');
-      document.querySelector('header').classList.toggle('dark');
-      document.querySelector('footer').classList.toggle('dark');
-      document.querySelectorAll('section').forEach(section => section.classList.toggle('dark'));
-    }
-  </script>
-</body>
-</html>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar component from JSON -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm shadow-blue-900/5 border-b border-slate-100 dark:border-slate-800">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-6 h-20">
+<!-- Brand Logo -->
+<a class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white font-headline-sm text-headline-sm" href="#">
+                DESIGNER.PORTFOLIO
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-8 font-inter tracking-tight font-medium text-sm">
+<!-- Active Item -->
+<a class="text-blue-950 dark:text-white font-bold border-b-2 border-blue-950 dark:border-white pb-1 font-label-md text-label-md" href="#home">Home</a>
+<!-- Inactive Items -->
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-300 px-3 py-2 rounded-DEFAULT font-label-md text-label-md scale-95 active:scale-90 transition-transform" href="#about">About</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-300 px-3 py-2 rounded-DEFAULT font-label-md text-label-md scale-95 active:scale-90 transition-transform" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity font-bold scale-95 active:scale-90 transition-transform hidden md:block">
+                Download CV
+            </button>
+<!-- Mobile Menu Icon (Placeholder for functionality) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-[120px]">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-6 pt-margin-lg pb-section-gap flex flex-col md:flex-row items-center gap-gutter" id="home">
+<div class="flex-1 space-y-margin-sm">
+<h1 class="font-headline-xl text-headline-xl text-primary-container">
+                    Mohammed<br/>Al-Hindi
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Actuarial Science graduate and active CFI candidate seeking an entry-level Financial Analysis role. Brings practical experience in data cleaning and financial calculation from a professional co-op. Looking for an opportunity to connect academic risk-modeling and ongoing corporate finance training to real-world business operations.
+                </p>
+<div class="pt-margin-sm flex gap-4">
+<a class="inline-flex items-center gap-2 bg-primary-container text-on-primary px-8 py-4 font-label-md text-label-md rounded-DEFAULT hover:opacity-90 transition-opacity" href="#contact">
+                        Get in Touch
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="flex-1 w-full md:w-auto mt-margin-md md:mt-0 relative aspect-square max-w-[500px]">
+<!-- Decorative background element for image -->
+<div class="absolute inset-4 bg-surface-container-highest rounded-xl -z-10 rotate-3"></div>
+<img alt="Mohammed Al-Hindi" class="w-full h-full object-cover rounded-xl shadow-lg border border-surface-container-highest z-10 relative" data-alt="Professional portrait of a young man in a modern corporate setting with soft natural lighting and neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAggwB2u5WwODXgUVGEWoRhk3d_Xz8EvNqVMXeREvMRz719B5xi01FCYX012DOt_kA3YVYqLu_NGvTqLG37EzkrS6g56h4lzRF9nTcrEe2RQ9jvnue9_D82OEhJ0zRq6Ok05PDFmgvuAvXEfANbINwZWp7UqdhSi_Tay23zmS2kKkb3cdIgdcYUkDBX0NW5jU6k_CGXUsrHBHI00rZ7PC3Ac4PrWWA9vvKbZwIiilxkQJuLHdAh8NVXfY9lMd17AD2f0jjsgxzB4XM"/>
+</div>
+</section>
+<!-- About Section (Secondary Layering) -->
+<section class="bg-surface-container-low py-section-gap" id="about">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-5 sticky top-32">
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-margin-sm">About Me</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Actuarial Science graduate and active CFI candidate seeking an entry-level Financial Analysis role.
+                    </p>
+</div>
+<div class="md:col-span-7 space-y-margin-md bg-surface-container-lowest p-8 md:p-12 rounded-xl border border-surface-container-highest shadow-sm shadow-primary-container/5">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-2">Practical Experience</h3>
+<p class="font-body-md text-body-md text-on-surface">
+                            Brings practical experience in data cleaning and financial calculation from a professional co-op.
+                        </p>
+</div>
+<div class="h-[1px] w-full bg-surface-container-highest my-6"></div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-2">Career Objectives</h3>
+<p class="font-body-md text-body-md text-on-surface mb-6">
+                            Looking for an opportunity to connect academic risk-modeling and ongoing corporate finance training to real-world business operations.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Financial Analysis</span>
+<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Risk Modeling</span>
+<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Corporate Finance</span>
+<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Data Cleaning</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="bg-primary-container text-on-primary py-section-gap" id="contact">
+<div class="max-w-[800px] mx-auto px-6 text-center">
+<h2 class="font-headline-lg text-headline-lg mb-margin-sm">Let's Connect</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-margin-md max-w-2xl mx-auto">
+                    I am currently open to internship and entry-level opportunities in the Actuarial and Insurance fields. Feel free to reach out to discuss potential collaborations.
+                </p>
+<div class="inline-flex items-center justify-center p-6 bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm">
+<a class="flex items-center gap-4 hover:opacity-80 transition-opacity" href="mailto:Al-hindimohd@hotmail.com">
+<span class="material-symbols-outlined text-3xl">mail</span>
+<span class="font-headline-sm text-headline-sm tracking-wide">Al-hindimohd@hotmail.com</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer component from JSON -->
+<footer class="w-full py-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 flat no-shadow">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 gap-8">
+<a class="text-lg font-black text-blue-950 dark:text-white font-headline-sm text-headline-sm" href="#">
+                DESIGNER.PORTFOLIO
+            </a>
+<nav class="flex flex-wrap justify-center gap-6 font-inter text-xs tracking-wide uppercase font-semibold">
+<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">LinkedIn</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">GitHub</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">Dribbble</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">Twitter</a>
+</nav>
+<p class="font-body-md text-body-md text-slate-400 dark:text-slate-500 text-sm">
+                © 2024 Premium Portfolio. Built with precision.
+            </p>
+</div>
+</footer>
+</body></html>
