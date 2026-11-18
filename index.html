@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mohammed Al-Hindi - Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light scroll-smooth" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Mohammed Al-Hindi - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -80,22 +79,22 @@
                         "margin-md": "32px"
                     },
                     "fontFamily": {
-                        "headline-xl": ["Inter"],
-                        "body-md": ["Inter"],
-                        "headline-lg": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "label-md": ["Inter"],
-                        "headline-sm": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "label-sm": ["Inter"]
+                        "headline-xl": ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+                        "body-md": ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+                        "headline-lg": ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+                        "body-lg": ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+                        "label-md": ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+                        "headline-sm": ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+                        "headline-md": ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+                        "label-sm": ["Inter", "IBM Plex Sans Arabic", "sans-serif"]
                     },
                     "fontSize": {
-                        "headline-xl": ["60px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-xl": ["60px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "headline-lg": ["44px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.75", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-sm": ["22px", { "lineHeight": "1.4", "fontWeight": "600" }],
                         "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
                         "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }]
                     }
@@ -103,119 +102,402 @@
             }
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        html[dir="rtl"] body {
+            font-family: "IBM Plex Sans Arabic", "Inter", sans-serif;
+        }
+        html[dir="rtl"] .tracking-tighter,
+        html[dir="rtl"] .tracking-tight,
+        html[dir="rtl"] .tracking-wide {
+            letter-spacing: 0 !important;
         }
     </style>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
-<!-- TopNavBar component from JSON -->
-<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm shadow-blue-900/5 border-b border-slate-100 dark:border-slate-800">
-<div class="flex justify-between items-center max-w-[1200px] mx-auto px-6 h-20">
-<!-- Brand Logo -->
-<a class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white font-headline-sm text-headline-sm" href="#">
-                DESIGNER.PORTFOLIO
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm shadow-blue-900/5 border-b border-slate-100 dark:border-slate-800">
+        <div class="flex justify-between items-center max-w-[1200px] mx-auto px-6 h-20">
+            <!-- Brand Logo -->
+            <a class="text-xl font-bold tracking-tight text-blue-950 dark:text-white font-headline-sm" href="#home" data-i18n="brand_name">
+                Mohammed Al-Hindi
             </a>
-<!-- Desktop Navigation -->
-<nav class="hidden md:flex items-center gap-8 font-inter tracking-tight font-medium text-sm">
-<!-- Active Item -->
-<a class="text-blue-950 dark:text-white font-bold border-b-2 border-blue-950 dark:border-white pb-1 font-label-md text-label-md" href="#home">Home</a>
-<!-- Inactive Items -->
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-300 px-3 py-2 rounded-DEFAULT font-label-md text-label-md scale-95 active:scale-90 transition-transform" href="#about">About</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-300 px-3 py-2 rounded-DEFAULT font-label-md text-label-md scale-95 active:scale-90 transition-transform" href="#contact">Contact</a>
-</nav>
-<!-- Trailing Action -->
-<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity font-bold scale-95 active:scale-90 transition-transform hidden md:block">
-                Download CV
-            </button>
-<!-- Mobile Menu Icon (Placeholder for functionality) -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-2xl">menu</span>
-</button>
-</div>
-</header>
-<main class="flex-grow pt-[120px]">
-<!-- Hero Section -->
-<section class="max-w-[1200px] mx-auto px-6 pt-margin-lg pb-section-gap flex flex-col items-center text-center" id="home">
-<div class="space-y-margin-sm max-w-3xl mx-auto">
-<h1 class="font-headline-xl text-headline-xl text-primary-container">
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6 font-medium text-sm" aria-label="Main Navigation">
+                <a class="text-blue-950 dark:text-white font-bold border-b-2 border-blue-950 dark:border-white pb-1 font-label-md text-label-md" href="#home" data-i18n="nav_home">Home</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-3 py-2 rounded-DEFAULT font-label-md text-label-md" href="#about" data-i18n="nav_about">About</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-3 py-2 rounded-DEFAULT font-label-md text-label-md" href="#experience" data-i18n="nav_experience">Experience</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-3 py-2 rounded-DEFAULT font-label-md text-label-md" href="#contact" data-i18n="nav_contact">Contact</a>
+            </nav>
+
+            <!-- Trailing Actions (Language Toggle + CV Download) -->
+            <div class="hidden md:flex items-center gap-3">
+                <button id="lang-toggle" type="button" aria-label="Switch Language" class="inline-flex items-center gap-1.5 border border-outline-variant bg-surface-container-lowest hover:bg-surface-container-low text-primary-container font-label-md text-label-md px-3.5 py-2.5 rounded-DEFAULT transition-colors font-semibold">
+                    <span class="material-symbols-outlined text-base">language</span>
+                    <span id="lang-toggle-label">عربي</span>
+                </button>
+                <a href="assets/Mohammed_Alhindi_CV.pdf" download="Mohammed_Alhindi_CV.pdf" class="inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-DEFAULT hover:opacity-90 transition-opacity font-bold">
+                    <span class="material-symbols-outlined text-base">download</span>
+                    <span data-i18n="download_cv">Download CV</span>
+                </a>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="flex md:hidden items-center gap-2">
+                <button id="lang-toggle-mobile" type="button" aria-label="Switch Language" class="inline-flex items-center gap-1 border border-outline-variant bg-surface-container-lowest text-primary-container font-label-md text-xs px-3 py-2 rounded-DEFAULT font-semibold">
+                    <span class="material-symbols-outlined text-sm">language</span>
+                    <span id="lang-toggle-mobile-label">عربي</span>
+                </button>
+                <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" aria-expanded="false" class="text-primary p-2 rounded-DEFAULT hover:bg-slate-100">
+                    <span class="material-symbols-outlined text-2xl" id="mobile-menu-icon">menu</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 px-6 py-4 space-y-3">
+            <nav class="flex flex-col space-y-2" aria-label="Mobile Navigation">
+                <a class="mobile-nav-link text-blue-950 dark:text-white font-semibold py-2 px-3 rounded-DEFAULT hover:bg-slate-50" href="#home" data-i18n="nav_home">Home</a>
+                <a class="mobile-nav-link text-slate-600 dark:text-slate-300 py-2 px-3 rounded-DEFAULT hover:bg-slate-50" href="#about" data-i18n="nav_about">About</a>
+                <a class="mobile-nav-link text-slate-600 dark:text-slate-300 py-2 px-3 rounded-DEFAULT hover:bg-slate-50" href="#experience" data-i18n="nav_experience">Experience</a>
+                <a class="mobile-nav-link text-slate-600 dark:text-slate-300 py-2 px-3 rounded-DEFAULT hover:bg-slate-50" href="#contact" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="pt-2 border-t border-slate-100 dark:border-slate-800">
+                <a href="assets/Mohammed_Alhindi_CV.pdf" download="Mohammed_Alhindi_CV.pdf" class="w-full inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-5 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity font-bold">
+                    <span class="material-symbols-outlined text-base">download</span>
+                    <span data-i18n="download_cv">Download CV</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-[120px]">
+        <!-- Hero Section -->
+        <section class="max-w-[1200px] mx-auto px-6 pt-margin-lg pb-section-gap flex flex-col items-center text-center" id="home">
+            <div class="space-y-margin-sm max-w-3xl mx-auto">
+                <h1 class="font-headline-xl text-4xl sm:text-5xl md:text-headline-xl text-primary-container" data-i18n-html="hero_name">
                     Mohammed<br/>Al-Hindi
                 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                    Actuarial Science graduate and active CFI candidate seeking an entry-level Financial Analysis role. Brings practical experience in data cleaning and financial calculation from a professional co-op. Looking for an opportunity to connect academic risk-modeling and ongoing corporate finance training to real-world business operations.
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed" data-i18n="hero_bio">
+                    Actuarial Science graduate, active CFI candidate, and currently preparing for the SOCPA Accounting Technician exam. With nearly a year of hands-on experience across business operations—spanning accounting, HR, management, and data entry—I combine analytical rigor with AI-driven workflow automation to streamline operations and bridge departments.
                 </p>
-<div class="pt-margin-sm flex gap-4 justify-center">
-<a class="inline-flex items-center gap-2 bg-primary-container text-on-primary px-8 py-4 font-label-md text-label-md rounded-DEFAULT hover:opacity-90 transition-opacity" href="#contact">
-                        Get in Touch
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- About Section (Secondary Layering) -->
-<section class="bg-surface-container-low py-section-gap" id="about">
-<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
-<div class="md:col-span-5 sticky top-32">
-<h2 class="font-headline-lg text-headline-lg text-primary-container mb-margin-sm">About Me</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        Actuarial Science graduate and active CFI candidate seeking an entry-level Financial Analysis role.
-                    </p>
-</div>
-<div class="md:col-span-7 space-y-margin-md bg-surface-container-lowest p-8 md:p-12 rounded-xl border border-surface-container-highest shadow-sm shadow-primary-container/5">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary-container mb-2">Practical Experience</h3>
-<p class="font-body-md text-body-md text-on-surface">
-                            Brings practical experience in data cleaning and financial calculation from a professional co-op.
+                <div class="pt-margin-sm flex flex-wrap gap-4 justify-center">
+                    <a class="inline-flex items-center gap-2 bg-primary-container text-on-primary px-8 py-4 font-label-md text-label-md rounded-DEFAULT hover:opacity-90 transition-opacity" href="#contact">
+                        <span data-i18n="hero_cta">Get in Touch</span>
+                        <span class="material-symbols-outlined text-sm rtl:rotate-180 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me & Career Focus Section -->
+        <section class="bg-surface-container-low py-section-gap" id="about">
+            <div class="max-w-[1200px] mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+                    <!-- Left Column: About Me Summary -->
+                    <div class="md:col-span-5 md:sticky md:top-32 space-y-4">
+                        <h2 class="font-headline-lg text-3xl md:text-headline-lg text-primary-container" data-i18n="about_title">About Me</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant" data-i18n="about_subtitle">
+                            Bridging analytical training, cross-departmental business operations, and modern workflow automation.
                         </p>
-</div>
-<div class="h-[1px] w-full bg-surface-container-highest my-6"></div>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary-container mb-2">Career Objectives</h3>
-<p class="font-body-md text-body-md text-on-surface mb-6">
-                            Looking for an opportunity to connect academic risk-modeling and ongoing corporate finance training to real-world business operations.
+                    </div>
+
+                    <!-- Right Column: Cross-Functional Perspective & Next Milestone -->
+                    <div class="md:col-span-7 space-y-6">
+                        <div class="bg-surface-container-lowest p-8 md:p-10 rounded-xl border border-surface-container-highest shadow-sm shadow-primary-container/5">
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 rounded-lg bg-primary-fixed text-primary-container shrink-0">
+                                    <span class="material-symbols-outlined">hub</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container mb-2" data-i18n="about_perspective_title">
+                                        Cross-Functional Business Perspective
+                                    </h3>
+                                    <p class="font-body-md text-body-md text-on-surface" data-i18n="about_perspective_body">
+                                        My current focus is building a comprehensive understanding of how every department operates—accounting, HR, management, and operations—to prevent blind spots, eliminate miscommunication, and ensure accurate decision-making across teams.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="h-[1px] w-full bg-surface-container-highest my-8"></div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 rounded-lg bg-primary-fixed text-primary-container shrink-0">
+                                    <span class="material-symbols-outlined">verified</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container mb-2" data-i18n="about_milestone_title">
+                                        Next Milestone
+                                    </h3>
+                                    <p class="font-body-md text-body-md text-on-surface" data-i18n="about_milestone_body">
+                                        Completing the SOCPA Accounting Technician certification (اختبار فني المحاسبة), after which I plan either to deepen my specialization in accounting or take on broader, high-impact operational and analytical challenges.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Practical Experience (Three Pillars) -->
+                <div class="mt-20 pt-12 border-t border-surface-container-highest" id="experience">
+                    <div class="max-w-3xl mb-10">
+                        <h2 class="font-headline-lg text-3xl md:text-headline-md text-primary-container mb-3" data-i18n="exp_section_title">
+                            My Practical Experience
+                        </h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant" data-i18n="exp_section_subtitle">
+                            Experience and core capabilities structured around three foundational pillars.
                         </p>
-<div class="flex flex-wrap gap-2 mt-4">
-<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Financial Analysis</span>
-<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Risk Modeling</span>
-<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Corporate Finance</span>
-<span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3 py-1 rounded-lg">Data Cleaning</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="bg-primary-container text-on-primary py-section-gap" id="contact">
-<div class="max-w-[800px] mx-auto px-6 text-center">
-<h2 class="font-headline-lg text-headline-lg mb-margin-sm">Let's Connect</h2>
-<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-margin-md max-w-2xl mx-auto">
-                    I am currently open to internship and entry-level opportunities in the Actuarial and Insurance fields. Feel free to reach out to discuss potential collaborations.
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Pillar 1 -->
+                        <div class="bg-surface-container-lowest p-8 rounded-xl border border-surface-container-highest shadow-sm shadow-primary-container/5 flex flex-col justify-between">
+                            <div>
+                                <div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined">business_center</span>
+                                </div>
+                                <h3 class="font-headline-sm text-xl text-primary-container mb-3" data-i18n="pillar1_title">
+                                    Business Operations &amp; Cross-Departmental Experience (~1 Year)
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface" data-i18n="pillar1_body">
+                                    Practical, day-to-day execution across accounting, HR, management support, and structured data entry.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 2 -->
+                        <div class="bg-surface-container-lowest p-8 rounded-xl border border-surface-container-highest shadow-sm shadow-primary-container/5 flex flex-col justify-between">
+                            <div>
+                                <div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined">smart_toy</span>
+                                </div>
+                                <h3 class="font-headline-sm text-xl text-primary-container mb-3" data-i18n="pillar2_title">
+                                    AI Workflow Automation
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface" data-i18n="pillar2_body">
+                                    Leveraging AI to design and build custom internal tools that automate repetitive tasks, validate data, and streamline daily operational workflows.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 3 -->
+                        <div class="bg-surface-container-lowest p-8 rounded-xl border border-surface-container-highest shadow-sm shadow-primary-container/5 flex flex-col justify-between">
+                            <div>
+                                <div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined">analytics</span>
+                                </div>
+                                <h3 class="font-headline-sm text-xl text-primary-container mb-3" data-i18n="pillar3_title">
+                                    Co-op Experience &amp; Core Analytical Skills
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface" data-i18n="pillar3_body">
+                                    Practical experience in data cleaning and financial calculations from my professional co-op, backed by strong Excel skills, actuarial risk-modeling fundamentals, and ongoing CFI corporate finance training.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills / Tags -->
+                    <div class="flex flex-wrap gap-2.5 mt-8">
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_ops">Business Operations</span>
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_accounting">Accounting &amp; SOCPA Prep</span>
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_ai">AI Workflow Automation</span>
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_finance">Financial Analysis (CFI)</span>
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_hr">HR &amp; Management Support</span>
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_excel">Advanced Excel</span>
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_risk">Actuarial Risk Modeling</span>
+                        <span class="bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-3.5 py-1.5 rounded-lg" data-i18n="tag_data">Data Cleaning &amp; Validation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-primary-container text-on-primary py-section-gap" id="contact">
+            <div class="max-w-[800px] mx-auto px-6 text-center">
+                <h2 class="font-headline-lg text-3xl md:text-headline-lg mb-margin-sm" data-i18n="contact_title">Let's Connect</h2>
+                <p class="font-body-lg text-body-lg text-primary-fixed-dim mb-margin-md max-w-2xl mx-auto" data-i18n="contact_body">
+                    Currently employed full-time and open exclusively to part-time or project-based collaborations. Feel free to reach out to discuss potential projects.
                 </p>
-<div class="inline-flex items-center justify-center p-6 bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm">
-<a class="flex items-center gap-4 hover:opacity-80 transition-opacity" href="mailto:Al-hindimohd@hotmail.com">
-<span class="material-symbols-outlined text-3xl">mail</span>
-<span class="font-headline-sm text-headline-sm tracking-wide">Al-hindimohd@hotmail.com</span>
-</a>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer component from JSON -->
-<footer class="w-full py-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 flat no-shadow">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 gap-8">
-<a class="text-lg font-black text-blue-950 dark:text-white font-headline-sm text-headline-sm" href="#">
-                DESIGNER.PORTFOLIO
+                <div class="inline-flex items-center justify-center p-6 bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm">
+                    <a class="flex items-center gap-4 hover:opacity-80 transition-opacity" href="mailto:Al-hindimohd@hotmail.com">
+                        <span class="material-symbols-outlined text-3xl">mail</span>
+                        <span class="font-headline-sm text-lg sm:text-headline-sm tracking-wide" dir="ltr">Al-hindimohd@hotmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-16 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 gap-8">
+            <a class="text-lg font-bold text-blue-950 dark:text-white font-headline-sm" href="#home" data-i18n="brand_name">
+                Mohammed Al-Hindi
             </a>
-<nav class="flex flex-wrap justify-center gap-6 font-inter text-xs tracking-wide uppercase font-semibold">
-<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">LinkedIn</a>
-<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">GitHub</a>
-<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">Dribbble</a>
-<a class="text-slate-400 dark:text-slate-500 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 opacity-80 hover:opacity-100 transition-opacity font-label-sm text-label-sm" href="#">Twitter</a>
-</nav>
-<p class="font-body-md text-body-md text-slate-400 dark:text-slate-500 text-sm">
-                © 2024 Premium Portfolio. Built with precision.
+            <nav class="flex flex-wrap justify-center gap-6 text-xs tracking-wide uppercase font-semibold" aria-label="Social Links">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 font-label-sm text-label-sm" href="https://www.linkedin.com/in/mohammed-alhindi-082911253/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-950 dark:hover:text-white transition-colors duration-200 font-label-sm text-label-sm" href="https://github.com/mohammade9" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p class="font-body-md text-body-md text-slate-500 dark:text-slate-400 text-sm" data-i18n="footer_copyright">
+                © 2026 Mohammed Al-Hindi. All rights reserved.
             </p>
-</div>
-</footer>
-</body></html>
+        </div>
+    </footer>
+
+    <!-- Bilingual Support & Mobile Menu Script -->
+    <script>
+        const translations = {
+            en: {
+                page_title: "Mohammed Al-Hindi - Portfolio",
+                brand_name: "Mohammed Al-Hindi",
+                nav_home: "Home",
+                nav_about: "About",
+                nav_experience: "Experience",
+                nav_contact: "Contact",
+                download_cv: "Download CV",
+                hero_name: "Mohammed<br/>Al-Hindi",
+                hero_bio: "Actuarial Science graduate, active CFI candidate, and currently preparing for the SOCPA Accounting Technician exam. With nearly a year of hands-on experience across business operations—spanning accounting, HR, management, and data entry—I combine analytical rigor with AI-driven workflow automation to streamline operations and bridge departments.",
+                hero_cta: "Get in Touch",
+                about_title: "About Me",
+                about_subtitle: "Bridging analytical training, cross-departmental business operations, and modern workflow automation.",
+                about_perspective_title: "Cross-Functional Business Perspective",
+                about_perspective_body: "My current focus is building a comprehensive understanding of how every department operates—accounting, HR, management, and operations—to prevent blind spots, eliminate miscommunication, and ensure accurate decision-making across teams.",
+                about_milestone_title: "Next Milestone",
+                about_milestone_body: "Completing the SOCPA Accounting Technician certification (اختبار فني المحاسبة), after which I plan either to deepen my specialization in accounting or take on broader, high-impact operational and analytical challenges.",
+                exp_section_title: "My Practical Experience",
+                exp_section_subtitle: "Experience and core capabilities structured around three foundational pillars.",
+                pillar1_title: "Business Operations & Cross-Departmental Experience (~1 Year)",
+                pillar1_body: "Practical, day-to-day execution across accounting, HR, management support, and structured data entry.",
+                pillar2_title: "AI Workflow Automation",
+                pillar2_body: "Leveraging AI to design and build custom internal tools that automate repetitive tasks, validate data, and streamline daily operational workflows.",
+                pillar3_title: "Co-op Experience & Core Analytical Skills",
+                pillar3_body: "Practical experience in data cleaning and financial calculations from my professional co-op, backed by strong Excel skills, actuarial risk-modeling fundamentals, and ongoing CFI corporate finance training.",
+                tag_ops: "Business Operations",
+                tag_accounting: "Accounting & SOCPA Prep",
+                tag_ai: "AI Workflow Automation",
+                tag_finance: "Financial Analysis (CFI)",
+                tag_hr: "HR & Management Support",
+                tag_excel: "Advanced Excel",
+                tag_risk: "Actuarial Risk Modeling",
+                tag_data: "Data Cleaning & Validation",
+                contact_title: "Let's Connect",
+                contact_body: "Currently employed full-time and open exclusively to part-time or project-based collaborations. Feel free to reach out to discuss potential projects.",
+                footer_copyright: "© 2026 Mohammed Al-Hindi. All rights reserved."
+            },
+            ar: {
+                page_title: "محمد الهندي - السيرة المهنية",
+                brand_name: "محمد الهندي",
+                nav_home: "الرئيسية",
+                nav_about: "نبذة عني",
+                nav_experience: "الخبرات العملية",
+                nav_contact: "تواصل معي",
+                download_cv: "تحميل السيرة الذاتية",
+                hero_name: "محمد<br/>الهندي",
+                hero_bio: "خريج علوم اكتوارية، ومرشح نشط في معهد التمويل المؤسسي (CFI)، وأستعد حالياً لاجتياز اختبار فني المحاسبة (SOCPA). أمتلك خبرة عملية تقارب العام في العمليات التشغيلية تشمل المحاسبة، والموارد البشرية، والإدارة، وإدخال البيانات، حيث أجمع بين التحليل المالي وبناء أدوات الأتمتة المدعومة بالذكاء الاصطناعي لتبسيط سير العمل وربط الإدارات بكفاءة.",
+                hero_cta: "تواصل معي",
+                about_title: "نبذة عني",
+                about_subtitle: "الجمع بين التأهيل التحليلي، والعمليات التشغيلية المشتركة بين الإدارات، وأتمتة سير العمل الحديثة.",
+                about_perspective_title: "منظور أعمال شامل ومتكامل",
+                about_perspective_body: "أركز حالياً على بناء فهم شامل لآلية عمل كافة الإدارات — من المحاسبة والموارد البشرية إلى الإدارة والعمليات التشغيلية — لتفادي الفجوات التشغيلية، والقضاء على سوء التواصل، وضمان اتخاذ قرارات دقيقة ومترابطة بين فرق العمل.",
+                about_milestone_title: "المحطة القادمة",
+                about_milestone_body: "اجتياز اختبار فني المحاسبة من هيئة المراجعين والمحاسبين السعودية (SOCPA)، حيث أخطط بعد ذلك إما للتعمق والتخصص المهني في مجال المحاسبة، أو خوض تحديات أوسع ذات أثر عالٍ في العمليات التشغيلية والتحليل.",
+                exp_section_title: "خبراتي العملية",
+                exp_section_subtitle: "ترتكز خبراتي ومهاراتي الأساسية على ثلاثة محاور رئيسية:",
+                pillar1_title: "العمليات التشغيلية والخبرة المشتركة بين الإدارات (قرابة عام)",
+                pillar1_body: "ممارسة عملية يومية تشمل المحاسبة، والموارد البشرية، ودعم الإدارة، وإدخال وتنظيم البيانات المهيكلة.",
+                pillar2_title: "أتمتة سير العمل بالذكاء الاصطناعي",
+                pillar2_body: "توظيف تقنيات الذكاء الاصطناعي لتصميم وبناء أدوات داخلية مخصصة تعمل على أتمتة المهام المتكررة، والتحقق من صحة البيانات، وتبسيط سير العمليات اليومية.",
+                pillar3_title: "خبرة التدريب التعاوني والمهارات التحليلية الأساسية",
+                pillar3_body: "خبرة عملية في تنظيف البيانات والحسابات المالية مكتسبة من التدريب التعاوني، مدعومة بمهارات متقدمة في برنامج Excel، وأساسيات نمذجة المخاطر الاكتوارية، والتدريب المستمر في التمويل المؤسسي (CFI).",
+                tag_ops: "العمليات التشغيلية",
+                tag_accounting: "المحاسبة واختبار فني المحاسبة (SOCPA)",
+                tag_ai: "أتمتة سير العمل بالذكاء الاصطناعي",
+                tag_finance: "التحليل المالي (CFI)",
+                tag_hr: "دعم الموارد البشرية والإدارة",
+                tag_excel: "مهارات Excel المتقدمة",
+                tag_risk: "نمذجة المخاطر الاكتوارية",
+                tag_data: "تنظيف البيانات والتحقق منها",
+                contact_title: "تواصل معي",
+                contact_body: "أعمل حالياً بدوام كامل، ومتاح فقط للمشاريع المستقلة أو التعاون بدوام جزئي. يسعدني تواصلكم لمناقشة فرص العمل على المشاريع.",
+                footer_copyright: "© 2026 محمد الهندي. جميع الحقوق محفوظة."
+            }
+        };
+
+        function setLanguage(lang) {
+            const validLang = lang === "ar" ? "ar" : "en";
+            const dict = translations[validLang];
+
+            document.documentElement.lang = validLang;
+            document.documentElement.dir = validLang === "ar" ? "rtl" : "ltr";
+            document.title = dict.page_title;
+
+            document.querySelectorAll("[data-i18n]").forEach((el) => {
+                const key = el.getAttribute("data-i18n");
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+                const key = el.getAttribute("data-i18n-html");
+                if (dict[key]) {
+                    el.innerHTML = dict[key];
+                }
+            });
+
+            const nextToggleText = validLang === "ar" ? "EN" : "عربي";
+            const desktopLabel = document.getElementById("lang-toggle-label");
+            const mobileLabel = document.getElementById("lang-toggle-mobile-label");
+            if (desktopLabel) desktopLabel.textContent = nextToggleText;
+            if (mobileLabel) mobileLabel.textContent = nextToggleText;
+
+            try {
+                localStorage.setItem("preferred_lang", validLang);
+            } catch (e) {
+                // Ignore storage errors in restricted environments
+            }
+        }
+
+        function toggleLanguage() {
+            const currentLang = document.documentElement.lang === "ar" ? "ar" : "en";
+            setLanguage(currentLang === "ar" ? "en" : "ar");
+        }
+
+        document.getElementById("lang-toggle").addEventListener("click", toggleLanguage);
+        document.getElementById("lang-toggle-mobile").addEventListener("click", toggleLanguage);
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileMenuIcon = document.getElementById("mobile-menu-icon");
+
+        mobileMenuBtn.addEventListener("click", () => {
+            const isHidden = mobileMenu.classList.toggle("hidden");
+            mobileMenuBtn.setAttribute("aria-expanded", String(!isHidden));
+            mobileMenuIcon.textContent = isHidden ? "menu" : "close";
+        });
+
+        document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                mobileMenuBtn.setAttribute("aria-expanded", "false");
+                mobileMenuIcon.textContent = "menu";
+            });
+        });
+
+        // Initialize language from localStorage
+        (function initLanguage() {
+            let savedLang = "en";
+            try {
+                savedLang = localStorage.getItem("preferred_lang") || "en";
+            } catch (e) {
+                savedLang = "en";
+            }
+            setLanguage(savedLang);
+        })();
+    </script>
+</body>
+</html>
